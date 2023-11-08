@@ -725,3 +725,59 @@ Processing by MoviesController#index as HTML
 Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 5165)
 
 
+Started GET "/" for 127.0.0.1 at 2023-11-07 23:43:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 127.0.0.1 at 2023-11-07 23:43:21 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:15
+  Rendered movies/index.html.haml within layouts/application (Duration: 37.0ms | Allocations: 33277)
+  Rendered layout layouts/application.html.haml (Duration: 508.4ms | Allocations: 129507)
+Completed 200 OK in 536ms (Views: 514.4ms | ActiveRecord: 0.8ms | Allocations: 139304)
+
+
+Started GET "/todos" for 127.0.0.1 at 2023-11-07 23:44:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/todos"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-08 01:48:36 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 127.0.0.1 at 2023-11-08 01:48:36 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:15
+  Rendered movies/index.html.haml within layouts/application (Duration: 51.9ms | Allocations: 32937)
+  Rendered layout layouts/application.html.haml (Duration: 175.1ms | Allocations: 60430)
+Completed 200 OK in 206ms (Views: 180.5ms | ActiveRecord: 2.0ms | Allocations: 67745)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-08 02:06:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 127.0.0.1 at 2023-11-08 02:06:09 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:15
+  Rendered movies/index.html.haml within layouts/application (Duration: 42.4ms | Allocations: 32937)
+  Rendered layout layouts/application.html.haml (Duration: 168.7ms | Allocations: 60176)
+Completed 200 OK in 194ms (Views: 173.5ms | ActiveRecord: 1.0ms | Allocations: 67491)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-08 02:23:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 127.0.0.1 at 2023-11-08 02:23:11 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (4.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:15
+  Rendered movies/index.html.haml within layouts/application (Duration: 72.6ms | Allocations: 32937)
+  Rendered layout layouts/application.html.haml (Duration: 217.3ms | Allocations: 60368)
+Completed 200 OK in 265ms (Views: 224.3ms | ActiveRecord: 5.8ms | Allocations: 67683)
+
+

@@ -4,7 +4,10 @@ class MoviesController < ApplicationController
   end
   def show
     id = params[:id] # retrieve movie ID from URI route
+    raise params.inspect
     @movie = Movie.find(id) # look up movie by unique ID
+  rescue => e
+    logger.debug(e.message)
     # will render render app/views/movies/show.html.haml by default
   end
   def new
@@ -42,5 +45,9 @@ class MoviesController < ApplicationController
     params.require(:movie)
     params[:movie].permit(:title,:rating,:release_date)
   end
+  def some_action
+    raise params.inspect
+  end
+
 end
 
